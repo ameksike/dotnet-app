@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using rest.src.Models;
 
 namespace rest.src.Controllers;
 

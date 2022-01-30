@@ -6,6 +6,7 @@ using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 
 using rest.src.Models;
 using rest.src.Services;
@@ -32,11 +33,11 @@ namespace rest.src.Controllers
             {
                 var result = await _typicode.GetUsersAsync();
                 
-                return Ok(result);
+                return null;//Ok(result)
             }
             catch (HttpRequestException)
             {
-                return NotFound();
+                return null; //NotFound();
             }
         }
     }

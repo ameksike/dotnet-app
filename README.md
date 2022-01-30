@@ -29,5 +29,6 @@
 - dotnet restore 
 - dotnet publish -c Release -o out 
 - dotnet run --project rest
-- https://localhost:7125/WeatherForecast
+- https://localhost:7125/Swagger/index.html
+- https://localhost:7125/api/WeatherForecast
 - 
