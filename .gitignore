@@ -2,6 +2,9 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
+/rest/obj
+/rest/bin
+
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/

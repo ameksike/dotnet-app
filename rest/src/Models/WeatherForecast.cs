@@ -1,4 +1,4 @@
-namespace kswebapi;
+namespace rest.src.Models;
 
 public class WeatherForecast
 {

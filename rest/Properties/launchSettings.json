@@ -4,17 +4,17 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:2877",
-      "sslPort": 44347
+      "applicationUrl": "http://localhost:29818",
+      "sslPort": 44345
     }
   },
   "profiles": {
-    "kswebapi": {
+    "rest": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
       "launchUrl": "swagger",
-      "applicationUrl": "https://localhost:7046;http://localhost:5260",
+      "applicationUrl": "https://localhost:7125;http://localhost:5044",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

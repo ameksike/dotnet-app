@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace kswebapi.Controllers;
+namespace rest.src.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("api/[controller]")]
 public class WeatherForecastController : ControllerBase
 {
     private static readonly string[] Summaries = new[]
