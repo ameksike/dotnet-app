@@ -18,6 +18,6 @@ namespace rest.src.Models.ORM
         public string bs { get; set; }
 
         
-        public ICollection<User> Users { get; set; } 
+        //public ICollection<User> Users { get; set; } 
     }
 }

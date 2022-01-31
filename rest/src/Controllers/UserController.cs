@@ -1,41 +1,26 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Net.Http.Headers;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
+//using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-using rest.src.Models.DTO;
+using rest.src.Models.ORM;
+using rest.src.Models.Repository;
 using rest.src.Services;
 
-namespace rest.src.Controllers;
-
-[ApiController]
-[Route("api/[controller]")]
-public class UserController : ControllerBase
+namespace rest.src.Controllers
 {
-    private readonly ILogger<UserController> _logger;
-    private readonly TypicodeService _typicode;
-
-    public UserController(ILogger<UserController> logger, TypicodeService tropiPay)
+    [Route("api/[controller]")] 
+    [Produces("application/json")]
+    //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    [ApiController]
+    public class UserController : AbstractApiController<User, RepositoryInterface<User>>
     {
-        _logger = logger;
-        _typicode = tropiPay;
-    }
+        public UserController(RepositoryInterface<User> repository) : base(repository)
+        {
 
-    [HttpGet]
-    public async Task<IActionResult> Get()
-    {
-        try
-        {
-            var result = await _typicode.GetUsersAsync();
-            return Ok(result);
-        }
-        catch (HttpRequestException)
-        {
-            return NotFound();
         }
     }
 }

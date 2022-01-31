@@ -9,7 +9,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-using rest.src.Models;
+using rest.src.Models.Repository;
+using rest.src.Models.ORM;
 
 namespace rest.src.Models.DAO
 {
@@ -35,6 +36,10 @@ namespace rest.src.Models.DAO
                     services.AddDbContext<AppDbContext>(options => options.UseSqlServer(ConnectionString));
                     break;
             }
+
+            // add repositorys
+            services.AddScoped<UserRepository>();
+            services.AddScoped<RepositoryInterface<User>, UserRepository>();
         }
     }
 }

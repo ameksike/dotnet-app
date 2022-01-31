@@ -19,6 +19,6 @@ namespace rest.src.Models.ORM
         public string zipcode { get; set; }
         public Geopoint geo { get; set; }
 
-        public ICollection<User> Users { get; set; } 
+        //public ICollection<User> Users { get; set; } 
     }
 }

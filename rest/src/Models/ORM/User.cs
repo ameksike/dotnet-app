@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace rest.src.Models.ORM
 {
-    public class User
+    public class User : IEntity
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
