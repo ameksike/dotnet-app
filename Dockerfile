@@ -2,6 +2,9 @@
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build-env
 WORKDIR /app
 
+EXPOSE 80
+EXPOSE 7125
+
 # Copy csproj and restore as distinct layers
 COPY rest/*.csproj ./
 RUN dotnet restore
