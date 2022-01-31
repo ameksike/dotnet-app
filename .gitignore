@@ -4,6 +4,7 @@
 #
 /rest/obj
 /rest/bin
+/rest/out
 
 /[Ll]ibrary/
 /[Tt]emp/
