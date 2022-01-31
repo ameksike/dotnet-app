@@ -31,4 +31,8 @@
 - dotnet run --project rest
 - https://localhost:7125/Swagger/index.html
 - https://localhost:7125/api/WeatherForecast
-- 
+
+## Entity Framework Core Command
+- dotnet tool install --global dotnet-ef
+- dotnet ef migrations add CreateDatabase --project rest
+- dotnet ef database update --project rest

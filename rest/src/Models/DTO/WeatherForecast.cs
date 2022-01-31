@@ -1,4 +1,4 @@
-namespace rest.src.Models;
+namespace rest.src.Models.DTO;
 
 public class WeatherForecast
 {
