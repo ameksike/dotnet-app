@@ -4,7 +4,7 @@ using System.Net.Http;
 using System.Text.Json;
 using System.Text;
 using Microsoft.Net.Http.Headers;
-using rest.src.Models;
+using rest.src.Models.DTO;
 
 namespace rest.src.Services
 {

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-using rest.src.Models;
+using rest.src.Models.DTO;
 using rest.src.Services;
 
 namespace rest.src.Controllers;
